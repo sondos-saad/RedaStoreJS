@@ -92,3 +92,34 @@ header .top_header .container{
 header .top_header .logo{
    width: 180px; 
 }
+header .top_header .search_box{
+    width: 610px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    background-color: var(--bg_color);
+}
+header .top_header .search_box input{
+    height: 55px;
+    width: 400px;
+    padding: 5px 15px 5px 10px;
+    background-color: var(--bg_color);
+    outline: none;
+    border: none;
+}
+header .top_header .search_box .select_box{
+    position: relative;
+}
+header .top_header .search_box .select_box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 50px;
+    background-color: green;
+}
+header .top_header .search_box select{
+   height: 55px;
+   width: 190px; 
+}
