@@ -104,8 +104,6 @@ header .top_header .search_box input{
     width: 400px;
     padding: 5px 15px 5px 10px;
     background-color: var(--bg_color);
-    outline: none;
-    border: none;
 }
 header .top_header .search_box .select_box{
     position: relative;
@@ -113,13 +111,56 @@ header .top_header .search_box .select_box{
 header .top_header .search_box .select_box::after{
     content: '';
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
-    width: 5px;
+    width: 1px;
     height: 50px;
-    background-color: green;
+    background-color: #b9b9b9;
 }
 header .top_header .search_box select{
    height: 55px;
    width: 190px; 
+   background: var(--bg_color);
+   font-size: 16px;
+   cursor: pointer;
+   padding-left: 10px;
+   margin-right: 10px;
+}
+header .top_header .search_box select option{
+    font-size: 15px;
+}
+header .top_header .search_box button{
+    height: 55px;
+    width: 60px;
+    background: var(--main_color);
+    font-size: 18px;
+    cursor: pointer;
+}
+header .top_header .search_box i{
+    color: var(--white_color);
+}
+header .top_header .header_icons{
+    display: flex;
+    gap: 30px;
+}
+header .top_header .header_icons .icon{
+    position: relative;
+    cursor: pointer;
+}
+header .top_header .header_icons .icon i{
+    font-size: 24px;
+}
+header .top_header .header_icons .icon .count{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: var(--main_color);
+    color: var(--white_color);
+    font-size: 11px;
+    border-radius: 50%;
 }
