@@ -164,3 +164,52 @@ header .top_header .header_icons .icon .count{
     font-size: 11px;
     border-radius: 50%;
 }
+header .bottom_header{
+    border-top: 1px solid var(--border_color);
+}
+header .bottom_header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .bottom_header nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 60px;
+}
+header .bottom_header nav .caregory_nav{
+    width: 220px;
+    height: 100%;
+    position: relative;
+}
+header .bottom_header nav .caregory_nav .category_btn{
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main_color);
+    padding: 0 15px;
+    cursor: pointer;
+}
+header .bottom_header nav .caregory_nav .category_btn p{
+    color: var(--white_color);
+    font-weight: 600;
+    font-size:15px ;
+}
+header .bottom_header nav .caregory_nav .category_btn i{
+    color: var(--white_color);
+}
+header .bottom_header .nav_links{
+    display: flex;
+    gap: 35px;
+}
+header .bottom_header .nav_links li a{
+    color: var(--color_heading);
+    transition: .3s;
+}
+header .bottom_header .nav_links li:hover a{
+    color: var(--main_color);
+}
