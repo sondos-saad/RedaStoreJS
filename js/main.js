@@ -13,13 +13,6 @@ var swiper = new Swiper('.mySwiper', {
       });
 
 
-let fish = 0;
-
-fish = fish + 3;
-fish = fish +7 
-
-
- console.log(fish)
 
 
  
