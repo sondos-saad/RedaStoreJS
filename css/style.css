@@ -243,23 +243,38 @@ header .bottom_header .nav_links li.active a{
     color: var(--main_color);
 }
 /* swiper */
-    .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #444;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  /* slide */
+.slider{
+    position: relative;
+}
+.slider .container{
+    display: flex;
+    justify-content: space-between;
+}
+.slider .banner_2{
+    width: 23%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .banner_2 a{
+    height: 100%;
+    width: 100%;
+}
+.slider .container .slide-swp{
+    width: 75%;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-wrapper{
+    height: auto !important;
+}
+.slider .container .slide-swp .swiper-pagination span{
+    background-color: white;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--main_color) !important;
+    width: 34px !important;
+    height: 8px !important; 
+    border-radius: 30px !important;
+}

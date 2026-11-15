@@ -6,10 +6,16 @@ function open_Category_list (){
 }
 
 // swiper
-var swiper = new Swiper('.mySwiper', {
+var swiper = new Swiper('.slide-swp ', {
         pagination: {
           el: '.swiper-pagination',
+          dynamicBullests: true,
+          clickable:true,
         },
+        autoplay:{
+            delay:2500,
+        },
+        loop: true
       });
 
 
